@@ -17,7 +17,7 @@ export default function Hero() {
         >
           {/* Line 1: Hi, I'm */}
           <motion.h1
-            className="text-xl sm:text-3xl md:text-4xl font-bold text-gray-700 root"
+            className="text-3xl md sm:text-5xl md:text-6xl font-extrabold text-gray-800 mt-1 leading-tight break-words max-w-[300px] sm:max-w-none root"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -27,7 +27,7 @@ export default function Hero() {
 
           {/* Line 2: Name (Mobile friendly font size) */}
           <motion.h2
-            className="text-xl sm:text-5xl md:text-6xl font-extrabold text-[#0148B9] mt-1 leading-tight break-words max-w-[300px] sm:max-w-none root"
+            className="text-3xl sm:text-5xl md:text-6xl font-abold text-[#0148B9] mt-1 leading-tight break-words max-w-[300px] sm:max-w-none root"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
@@ -81,7 +81,7 @@ export default function Hero() {
 
         {/* Image Section */}
         <motion.div
-          className="lg:w-1/2 flex justify-center lg:justify-end"
+          className="lg:w-1/2 flex justify-center lg:justify-end mt-6 lg:mt-0"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
