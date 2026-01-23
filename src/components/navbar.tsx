@@ -30,13 +30,13 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Button */}
-        <button
+        <div
           onClick={() => setOpen(!open)}
-          className="md:hidden bg-transparent border-none"
+          className="md:hidden bg-transparent border-none cursor-pointer mr-2"
           aria-label="Toggle Menu"
         >
           {open ? <X size={26} /> : <Menu size={26} />}
-        </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
