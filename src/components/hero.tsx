@@ -13,7 +13,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-xl sm:text-3xl md:text-5xl font-extrabold leading-tight tracking-tight root">
+          <h1 className="text-xl sm:text-2xl md:text-5xl font-extrabold leading-tight tracking-tight root">
             Hi I'm{" "}
             <span className="text-[#0148B9] whitespace-nowrap inline-block root">
               Muaz Al Muttaki
