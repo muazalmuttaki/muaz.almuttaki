@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-white text-gray-900 min-h-screen flex items-center py-10 lg:py-0"
+      className="relative bg-white text-gray-900 min-h-screen flex items-center py-14 lg:py-8"
     >
       <div className="relative z-10 w-full max-w-[1200px] mx-auto px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         
@@ -27,7 +27,7 @@ export default function Hero() {
 
           {/* Line 2: Name (Mobile friendly font size) */}
           <motion.h2
-            className="text-2xl sm:text-5xl md:text-6xl font-extrabold text-[#0148B9] mt-1 leading-tight break-words max-w-[300px] sm:max-w-none root"
+            className="text-xl sm:text-5xl md:text-6xl font-extrabold text-[#0148B9] mt-1 leading-tight break-words max-w-[300px] sm:max-w-none root"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
