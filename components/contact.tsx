@@ -1,3 +1,5 @@
+"use client";
+
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa6";
 import { motion } from "framer-motion";
@@ -48,7 +50,8 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-8 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+      {/* Max width 1200px */}
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,9 +60,11 @@ export default function Contact() {
           className="grid md:grid-cols-2 bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.08)]"
         >
           {/* Left Info */}
-          <div className="p-10">
-            <h3 className="text-3xl font-semibold text-gray-900 root">Contact Information</h3>
-            <p className="mt-3 text-gray-600 max-w-sm">
+          <div className="p-8 sm:p-10">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 root">
+              Contact Information
+            </h3>
+            <p className="mt-3 text-gray-600">
               Have a project in mind or just want to chat? Feel free to reach out.
             </p>
 
@@ -75,7 +80,6 @@ export default function Contact() {
                   transition={{ delay: 0.1 * i }}
                   viewport={{ once: true }}
                   className="flex items-center gap-4 cursor-pointer text-gray-700 hover:text-blue-600 transition"
-                  style={{ display: "flex" }}
                 >
                   <div className="w-11 h-11 flex items-center justify-center rounded-full border border-blue-600 text-blue-600 shadow-sm hover:bg-blue-600 hover:text-white transition">
                     {item.icon}
@@ -87,7 +91,7 @@ export default function Contact() {
           </div>
 
           {/* Right Form */}
-          <div className="p-10 bg-gray-50">
+          <div className="p-8 sm:p-10 bg-gray-50">
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -107,7 +111,7 @@ export default function Contact() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
+                transition={{ duration: 0.1 }}
                 viewport={{ once: true }}
               >
                 <label className="block text-sm text-gray-600 mb-2">Email Address</label>
@@ -134,8 +138,7 @@ export default function Contact() {
                 ></textarea>
               </motion.div>
 
-              {/* Send Message Button */}
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} style={{ pointerEvents: "auto" }}>
+              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
                 <div
                   className="w-full border border-blue-600 text-blue-600 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition shadow-sm cursor-pointer text-center"
                   onClick={handleSubmit}

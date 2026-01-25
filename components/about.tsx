@@ -1,8 +1,11 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Rocket } from "lucide-react";
 import { GiBrain } from "react-icons/gi";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
-import { Link } from "react-router-dom";
+import  Link  from "next/link";
+import Image from "next/image";
 
 export default function AboutMe() {
   return (
@@ -29,9 +32,11 @@ export default function AboutMe() {
             transition={{ duration: 0.6 }}
             className="w-74 h-74 sm:w-82 sm:h-82 md:w-90 md:h-90 rounded-2xl bg-gray-100 shadow-xl border overflow-hidden hover:scale-105 transition-transform duration-300 flex-shrink-0 ml-0 lg:ml-15"
           >
-            <img
+            <Image
               src="/muaz.png"
               alt="Muaz Al Muttaki"
+              width={360}
+              height={360}
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -44,7 +49,7 @@ export default function AboutMe() {
             className="text-center lg:text-left max-w-[550px]"
           >
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              I'm <span className="font-semibold text-gray-900">Muaz Al Muttaki</span>, a passionate Frontend Developer who loves crafting clean, fast, and user-friendly web experiences. I enjoy building reusable UI components, solving complex problems, and optimizing performance using modern tools like React and Shadcn UI.
+              {"I'm"} <span className="font-semibold text-gray-900">Muaz Al Muttaki</span>, a passionate Frontend Developer who loves crafting clean, fast, and user-friendly web experiences. I enjoy building reusable UI components, solving complex problems, and optimizing performance using modern tools like React and Shadcn UI.
             </p>
 
             {/* Features */}
@@ -68,7 +73,7 @@ export default function AboutMe() {
             {/* Button */}
             <div className="flex justify-center lg:justify-start">
               <Link
-                to="/portfolio"
+                href="/portfolio"
                 className="bg-[#0148b9] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-white hover:text-[#0148b9] transition-all duration-300 text-center"
               >
                 See details

@@ -1,8 +1,13 @@
+"use client";
 
 
-import Logo from "@/components/logo";
+
+
+// import Logo from "@/components/logo";
+import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
 import {SiGmail  } from "react-icons/si";
 
 const Footer: React.FC = () => {
@@ -19,9 +24,14 @@ const Footer: React.FC = () => {
     <footer className="bg-white text-gray-300 py-12 border-t border-gray-600 max-w-[1200px] mx-auto">
       <div className="my-container mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Logo / Name */}
-         <a href="#home" id="#home" className="flex items-center cursor-pointer">
-          <Logo />
-        </a>
+         <Link href="#home" id="#home" className="flex items-center cursor-pointer">
+          <Image src="/logo.png" 
+          alt="Logo" 
+          width={200} 
+          height={100} 
+          className="w-40 h-auto"
+          />
+        </Link>
 
         {/* Navigation Links */}
     <div className="hidden md:flex items-center space-x-2">

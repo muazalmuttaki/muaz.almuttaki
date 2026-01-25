@@ -1,4 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -17,12 +21,12 @@ export default function Hero() {
         >
           {/* Line 1: Hi, I'm */}
           <motion.h1
-            className="text-3xl md sm:text-5xl md:text-6xl font-extrabold text-gray-800 mt-1 leading-tight break-words max-w-[300px] sm:max-w-none root"
+            className="text-3xl md sm:text-5xl md:text-6xl font-bold text-gray-800 mt-1 leading-tight break-words max-w-[300px] sm:max-w-none root"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            Hi, I'm
+            Hi, {"I'm"}
           </motion.h1>
 
           {/* Line 2: Name (Mobile friendly font size) */}
@@ -63,19 +67,19 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            <a
+            <Link
               href="#Resume"
               className="bg-[#0148b9] text-white font-semibold px-8 py-3 rounded-md shadow-lg hover:bg-[#01358a] transition-all duration-300 text-center text-sm sm:text-base"
             >
               View Resume
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#contact"
               className="border-2 border-[#0148b9] text-[#0148b9] font-semibold px-8 py-3 rounded-md hover:bg-[#0148b9] hover:text-white transition-all duration-300 text-center text-sm sm:text-base"
             >
               Contact Me
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 
@@ -89,9 +93,11 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute inset-0 bg-[#0148b9] opacity-10 blur-3xl rounded-full"></div>
             <div className="relative w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-xl">
-              <img
-                src="muaz.png"
+              <Image
+                src="/muaz.png"
                 alt="Muaz Al Muttaki"
+                width={400}
+                height={400}
                 className="w-full h-full object-cover object-top"
               />
             </div>

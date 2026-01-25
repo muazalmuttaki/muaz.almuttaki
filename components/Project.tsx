@@ -1,7 +1,10 @@
+"use client";
+
+
 // Projects.tsx
 import { motion } from "framer-motion";
 import ProjectCard from "@/components/projectCard"; // নিশ্চিত হও path ঠিক আছে
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 function Projects() {
   const projectList = [
@@ -82,16 +85,15 @@ function Projects() {
           ))}
         </div>
 
-        <div className="mt-12 flex justify-center">
-          <Link
-            to="https://github.com/muazalmuttaki"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#0148b9] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-white hover:text-[#0148b9] transition-all duration-300 text-center"
-          >
-            View More Projects
-          </Link>
-        </div>
+<div className="mt-12 flex justify-center">
+  <Link
+    href="/moreProject"
+    className="bg-[#0148b9] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-white hover:text-[#0148b9] transition-all duration-300 text-center"
+  >
+    View More Projects
+  </Link>
+</div>
+
       </div>
     </motion.div>
   );

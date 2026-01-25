@@ -1,6 +1,10 @@
+"use client";
+
+
 // ProjectCard.tsx
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -23,9 +27,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
       {/* Image */}
       <div className="overflow-hidden">
-        <img
+        <Image
           src={image}
           alt={title}
+          width={400}
+          height={192}
           className="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300"
         />
       </div>
@@ -55,20 +61,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {/* Buttons */}
         <div className="mt-4 flex flex-col sm:flex-row justify-center items-center gap-3">
           <Link
-            to={projectLink}
+            href={projectLink}
             className="bg-[#0148b9] text-white font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-lg shadow-lg hover:bg-white hover:text-[#0148b9] transition-all duration-300 text-center w-full"
           >
             View Project
           </Link>
 
-          <a
+          <Link
             href={codeLink}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#0148b9] text-white font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-lg shadow-lg hover:bg-white hover:text-[#0148b9] transition-all duration-300 text-center w-full"
           >
             View Code
-          </a>
+          </Link>
         </div>
       </div>
     </div>
