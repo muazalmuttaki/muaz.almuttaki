@@ -2,7 +2,8 @@
 
 // File: components/Skills.tsx
 import React from "react";
-
+import Image from "next/image";
+import logo from "@/public/logo.svg";
 
 import { motion, type Variants } from "framer-motion";
 import {
@@ -17,7 +18,7 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
-  SiVite,
+  
   SiMongodb,
   SiExpress,
 } from "react-icons/si";
@@ -42,7 +43,7 @@ const skills: Skill[] = [
   { name: "JavaScript", level: "Advanced", percent: 85, icon: <FaJs className="text-yellow-400" /> },
   { name: "TypeScript", level: "Intermediate", percent: 65, icon: <SiTypescript className="text-blue-600" /> },
   { name: "React", level: "Advanced", percent: 85, icon: <FaReact className="text-cyan-400" /> },
-  { name: "Vite", level: "Intermediate", percent: 65, icon: <SiVite className="text-purple-500" /> },
+  { name: "Vite",level: "Advanced",percent: 85, icon:(<Image src={logo} alt="Vite" width={48} height={48} />),},
   { name: "Next.js", level: "Intermediate", percent: 65, icon: <SiNextdotjs className="text-black" /> },
   { name: "Node.js", level: "Intermediate", percent: 65, icon: <FaNodeJs className="text-green-500" /> },
   { name: "Express.js", level: "Intermediate", percent: 65, icon: <SiExpress className="text-gray-700" /> },

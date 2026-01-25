@@ -9,7 +9,7 @@ import React from "react";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import {SiGmail  } from "react-icons/si";
-
+import logo from "@/public/logo.png";
 const Footer: React.FC = () => {
 
 
@@ -25,10 +25,8 @@ const Footer: React.FC = () => {
       <div className="my-container mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Logo / Name */}
          <Link href="#home" id="#home" className="flex items-center cursor-pointer">
-          <Image src="/logo.png" 
-          alt="Logo" 
-          width={200} 
-          height={100} 
+          <Image src={logo} 
+          alt="Logo"  
           className="w-40 h-auto"
           />
         </Link>

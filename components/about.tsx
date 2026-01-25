@@ -49,7 +49,7 @@ export default function AboutMe() {
             className="text-center lg:text-left max-w-[550px]"
           >
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              {"I'm"} <span className="font-semibold text-gray-900">Muaz Al Muttaki</span>, a passionate Frontend Developer who loves crafting clean, fast, and user-friendly web experiences. I enjoy building reusable UI components, solving complex problems, and optimizing performance using modern tools like React and Shadcn UI.
+              {"I'm"} <span className="font-semibold text-gray-900">Muaz Al Muttaki</span>, a passionate Frontend Developer dedicated to crafting clean, fast, and user-friendly web experiences. I enjoy building reusable UI components, solving complex challenges, and optimizing performance with modern tools like React and Shadcn UI.
             </p>
 
             {/* Features */}

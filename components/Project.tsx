@@ -14,7 +14,7 @@ function Projects() {
       image: "/project1.jpg",
       tech: ["React", "Node.js"],
       projectLink: "/projects/library",
-      codeLink: "https://github.com/muazalmuttaki/library",
+      codeLink: "https://github.com/muazalmuttaki?tab=repositories",
     },
     {
       title: "Landing Page",
@@ -22,7 +22,7 @@ function Projects() {
       image: "/project2.jpg",
       tech: ["Next.js", "Tailwind CSS"],
       projectLink: "/projects/landing-page",
-      codeLink: "https://github.com/muazalmuttaki/landing-page",
+      codeLink: "https://github.com/muazalmuttaki?tab=repositories",
     },
     {
       title: "E-commerce",
@@ -30,7 +30,7 @@ function Projects() {
       image: "/project3.jpg",
       tech: ["TypeScript", "Firebase"],
       projectLink: "/projects/ecommerce",
-      codeLink: "https://github.com/muazalmuttaki/ecommerce",
+      codeLink: "https://github.com/muazalmuttaki?tab=repositories",
     },
     {
       title: "Project 4",
@@ -38,7 +38,7 @@ function Projects() {
       image: "/project1.jpg",
       tech: ["React", "Tailwind CSS"],
       projectLink: "/projects/project4",
-      codeLink: "https://github.com/muazalmuttaki/project4",
+      codeLink: "https://github.com/muazalmuttaki?tab=repositories",
     },
     {
       title: "Project 5",
@@ -46,7 +46,7 @@ function Projects() {
       image: "/project2.jpg",
       tech: ["Next.js", "TypeScript"],
       projectLink: "/projects/project5",
-      codeLink: "https://github.com/muazalmuttaki/project5",
+      codeLink: "https://github.com/muazalmuttaki?tab=repositories",
     },
     {
       title: "Project 6",
@@ -54,7 +54,7 @@ function Projects() {
       image: "/project3.jpg",
       tech: ["TypeScript", "Firebase"],
       projectLink: "/projects/project6",
-      codeLink: "https://github.com/muazalmuttaki/project6",
+      codeLink: "https://github.com/muazalmuttaki?tab=repositories",
     },
   ];
 
