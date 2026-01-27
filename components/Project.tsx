@@ -9,7 +9,7 @@ import Link from "next/link";
 function Projects() {
   const projectList = [
     {
-      title: "Library",
+      title: "Rojnamcha",
       description: "Located at Justice Shahabuddin Park, this is a women-owned store known for its large collection.",
       image: "/project1.jpg",
       tech: ["React", "Node.js"],
