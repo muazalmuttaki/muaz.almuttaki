@@ -11,8 +11,8 @@ function Projects() {
     {
       title: "Rojnamcha",
       description: "Located at Justice Shahabuddin Park, this is a women-owned store known for its large collection.",
-      image: "/project1.jpg",
-      tech: ["React", "Node.js"],
+      image: "/image.png",
+      tech: ["React", "Tailwind CSS"],
       projectLink: "https://rojnamcha.vercel.app/",
       codeLink: "https://github.com/muazalmuttaki/rojnamcha",
     },
@@ -33,7 +33,7 @@ function Projects() {
       codeLink: "https://github.com/muazalmuttaki?tab=repositories",
     },
     {
-      title: "Project 4",
+      title: "Library",
       description: "Another modern web application using React and Tailwind CSS.",
       image: "/project1.jpg",
       tech: ["React", "Tailwind CSS"],
