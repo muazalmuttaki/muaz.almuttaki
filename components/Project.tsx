@@ -13,8 +13,8 @@ function Projects() {
       description: "Located at Justice Shahabuddin Park, this is a women-owned store known for its large collection.",
       image: "/project1.jpg",
       tech: ["React", "Node.js"],
-      projectLink: "/projects/library",
-      codeLink: "https://github.com/muazalmuttaki?tab=repositories",
+      projectLink: "https://rojnamcha.vercel.app/",
+      codeLink: "https://github.com/muazalmuttaki/rojnamcha",
     },
     {
       title: "Landing Page",
