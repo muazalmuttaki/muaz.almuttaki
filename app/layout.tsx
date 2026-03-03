@@ -5,8 +5,20 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Muaz Al Muttaki",
-  description: "Muaz Al Muttaki portfolio website",
+  title: {
+    default: "Muaz Al Muttaki",
+    template: "%s | Muaz Al Muttaki",
+  },
+  description: "Islamic educator & Web Developer portfolio website.",
+  keywords: ["Muaz", "Web Developer", "Islamic Educator", "Portfolio"],
+  authors: [{ name: "Muaz Al Muttaki" }],
+  openGraph: {
+    title: "Muaz Al Muttaki",
+    description: "Official portfolio website",
+    url: "https://muazalmuttaki.vercel.app/",
+    siteName: "Muaz Portfolio",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
