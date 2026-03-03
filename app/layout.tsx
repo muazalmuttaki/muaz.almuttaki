@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Muaz Al Muttaki" }],
   openGraph: {
     title: "Muaz Al Muttaki",
-    description: "Official portfolio website",
+    description: "Muaz Al Muttaki Official portfolio website",
     url: "https://muazalmuttaki.vercel.app/",
-    siteName: "Muaz Portfolio",
+    siteName: "Muaz Al Muttaki Portfolio",
     type: "website",
   },
 };
