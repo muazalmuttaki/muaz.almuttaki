@@ -17,8 +17,8 @@ function Projects() {
       codeLink: "https://github.com/muazalmuttaki/rojnamcha",
     },
     {
-      title: "Landing Page",
-      description: "Modern landing page design for a startup using Next.js and Tailwind.",
+      title: "Dijital Tasbih",
+      description: "A digital tasbih app built with React and Tailwind CSS.",
       image: "/tasbih.png",
       tech: ["react", "Tailwind CSS"],
       projectLink: "https://dijitaltasbih.vercel.app/",
