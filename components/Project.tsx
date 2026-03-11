@@ -19,10 +19,10 @@ function Projects() {
     {
       title: "Landing Page",
       description: "Modern landing page design for a startup using Next.js and Tailwind.",
-      image: "/project2.jpg",
-      tech: ["Next.js", "Tailwind CSS"],
-      projectLink: "/projects/landing-page",
-      codeLink: "https://github.com/muazalmuttaki?tab=repositories",
+      image: "/tasbih.png",
+      tech: ["react", "Tailwind CSS"],
+      projectLink: "https://dijitaltasbih.vercel.app/",
+      codeLink: "https://github.com/muazalmuttaki/dijital.tasbih",
     },
     {
       title: "E-commerce",
